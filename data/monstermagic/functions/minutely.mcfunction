@@ -1,0 +1,2 @@
+execute as @e[type=armor_stand,scores={DirtyMana=64}] at @s if block ~ ~-2 ~ minecraft:diamond_block run summon item ~ ~3 ~ {Item:{id:"minecraft:diamond",Count:1}}
+execute as @e[type=armor_stand,scores={DirtyMana=64}] at @s if block ~ ~-2 ~ minecraft:diamond_block run scoreboard players remove @s DirtyMana 64
