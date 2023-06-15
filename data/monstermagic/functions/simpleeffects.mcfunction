@@ -14,9 +14,8 @@ execute as @e[type=armor_stand,scores={DirtyMana=8..}] at @s store success score
 scoreboard players remove @e[scores={DirtyMana=8..,DidMakeIron=1}] DirtyMana 8
 scoreboard players set @e[scores={DidMakeIron=1}] DidMakeIron 0
 
-#Aron Balls
-execute as @e[type=armor_stand,scores={DirtyMana=16..}] at @s store success score @s DidSummonAron if block ~ ~-2 ~ chiseled_sandstone if entity @e[type=item,distance=..1,nbt={Item:{id:"minecraft:cactus",Count:1b}}] run summon minecraft:villager ~ ~ ~ {VillagerData:{type:"plains",profession:"leatherworker",level:2},Offers:{Recipes:[{rewardExp:0b,buy:{id:"lime_dye",Count:2},sell:{id:"slime_ball",Count:1}},{maxUses:1,rewardExp:0b,buy:{id:"elytra",Count:1},sell:{id:"slime_spawn_egg",Count:1,tag:{EntityTag:{id:"minecraft:slime",PersistenceRequired:1b,Glowing:1,Size:9,Health:100,Attributes:[{Name:"minecraft:generic.max_health",Base:100}]}}}}]},CustomName:'[{"text":"Aron Balls"}]'}
-execute as @e[scores={DidSummonAron=1}] at @s run playsound minecraft:entity.villager.celebrate voice @a ~ ~ ~ 10
-execute as @e[scores={DidSummonAron=1}] at @s run tellraw @a {"text":"ARON BALLS HAS BEEN SUMMONED","color": "green","bold": true,"underlined": true}
-scoreboard players remove @e[scores={DidSummonAron=1}] DirtyMana 16
-scoreboard players set @e[scores={DidSummonAron=1}] DidSummonAron 0
+#Slime generating:
+execute as @e[type=armor_stand,scores={Mana=16..}] at @s if block ~ ~-1 ~ water if block ~ ~ ~ lily_pad store success score @s DidSummonSlime run summon slime ~ ~ ~ {Size:0}
+scoreboard players remove @e[scores={Mana=16..,DidSummonSlime=1}] Mana 16
+execute as @e[type=armor_stand,scores={DidSummonSlime=1}] at @s run particle item_slime ~ ~ ~ .5 .5 .5 10 20
+scoreboard players remove @e[scores={DidSummonSlime=1}] DidSummonSlime 1

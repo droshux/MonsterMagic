@@ -1,0 +1,65 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:smooth_stone",
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:blue_dye",
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:orange_dye",
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:comparator",
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 1
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
