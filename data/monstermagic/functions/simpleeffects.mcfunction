@@ -1,6 +1,6 @@
 execute as @e[type=armor_stand,scores={DirtyMana=16..}] at @s if block ~ ~-1 ~ stripped_warped_stem[axis=y] run effect give @e[distance=..3,type=!armor_stand,tag=!anode,tag=!cathode] levitation 1 3 false
 
-#Easter turtle eggss
+#Easter turtle helmets
 execute as @e[type=armor_stand,scores={DirtyMana=..32}] at @s if block ~ ~ ~ turtle_egg[eggs=4] if entity @p[distance=..5] run give @p turtle_helmet{Enchantments:[{id:"minecraft:protection",lvl:4},{id:"minecraft:respiration",lvl:3}]}
 execute as @e[type=armor_stand,scores={DirtyMana=..32}] at @s if block ~ ~ ~ turtle_egg[eggs=4] if entity @p[distance=..5] run kill @s
 
