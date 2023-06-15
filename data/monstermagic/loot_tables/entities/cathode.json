@@ -21,7 +21,7 @@
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "name": "minecraft:orange_dye",
+                    "name": "minecraft:orange_tulip",
                     "conditions": [
                         {
                             "condition": "minecraft:random_chance",

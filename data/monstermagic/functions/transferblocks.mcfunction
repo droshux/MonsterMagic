@@ -1,6 +1,6 @@
 #Craft the redstone duode
-execute as @e[nbt={Item:{id:"minecraft:smooth_stone"}}] at @s if entity @e[nbt={Item:{id:"minecraft:blue_dye"}},distance=..1] if entity @e[nbt={Item:{id:"minecraft:orange_dye"}},distance=..1] if entity @e[nbt={Item:{id:"minecraft:comparator"}}] run give @p bat_spawn_egg{display:{Name:'[{"text":"Redstone Duode","italic":false}]',Lore:['[{"text":"Influences the movement of mana","italic":false}]']},RepairCost:999999999}
-execute as @e[nbt={Item:{id:"minecraft:smooth_stone"}}] at @s if entity @e[nbt={Item:{id:"minecraft:blue_dye"}},distance=..1] if entity @e[nbt={Item:{id:"minecraft:orange_dye"}},distance=..1] if entity @e[nbt={Item:{id:"minecraft:comparator"}}] run kill @e[distance=..1,type=item]
+execute as @e[nbt={Item:{id:"minecraft:chiseled_polished_blackstone"}}] at @s if entity @e[nbt={Item:{id:"minecraft:blue_dye"}},distance=..1] if entity @e[nbt={Item:{id:"minecraft:orange_dye"}},distance=..1] if entity @e[nbt={Item:{id:"minecraft:comparator"}}] run give @p bat_spawn_egg{display:{Name:'[{"text":"Redstone Duode","italic":false}]',Lore:['[{"text":"Influences the movement of mana","italic":false}]']},RepairCost:999999999}
+execute as @e[nbt={Item:{id:"minecraft:chiseled_polished_blackstone"}}] at @s if entity @e[nbt={Item:{id:"minecraft:blue_dye"}},distance=..1] if entity @e[nbt={Item:{id:"minecraft:orange_dye"}},distance=..1] if entity @e[nbt={Item:{id:"minecraft:comparator"}}] run kill @e[distance=..1,type=item]
 
 #Craft the anode
 execute as @e[nbt={Item:{id:"minecraft:smooth_stone"}}] at @s if entity @e[nbt={Item:{id:"minecraft:blue_dye"}},distance=..1] run give @p bat_spawn_egg{display:{Name:'[{"text":"Anode","italic":false}]',Lore:['[{"text":"Influences the movement of mana","italic":false}]']},RepairCost:999999999}

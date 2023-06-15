@@ -21,7 +21,7 @@
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "name": "minecraft:blue_dye",
+                    "name": "minecraft:cornflower",
                     "conditions": [
                         {
                             "condition": "minecraft:random_chance",

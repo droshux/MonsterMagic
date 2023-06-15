@@ -1,6 +1,7 @@
 #Functions that run every tick
 function monstermagic:mana_generation
-function monstermagic:manatransfer
+function monstermagic:manatransfer_dirty
+function monstermagic:manatransfer_pure
 function monstermagic:transferblocks
 function monstermagic:simpleeffects
 function monstermagic:mana_altar

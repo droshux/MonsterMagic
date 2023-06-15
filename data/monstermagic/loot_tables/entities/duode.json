@@ -6,7 +6,7 @@
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "name": "minecraft:smooth_stone",
+                    "name": "minecraft:chiseled_polished_blackstone",
                     "conditions": [
                         {
                             "condition": "minecraft:random_chance",
@@ -21,7 +21,7 @@
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "name": "minecraft:blue_dye",
+                    "name": "minecraft:cornflower",
                     "conditions": [
                         {
                             "condition": "minecraft:random_chance",
@@ -36,7 +36,7 @@
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "name": "minecraft:orange_dye",
+                    "name": "minecraft:orange_tulip",
                     "conditions": [
                         {
                             "condition": "minecraft:random_chance",
